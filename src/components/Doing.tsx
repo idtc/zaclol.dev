@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import { Presence } from '../types/lanyard';
 import SpotifyLogo from '../assets/images/spotify-logo.svg';
-import { useAtom } from 'jotai';
+import { useAtom } from 'jotai'; 
 import { doingAtom } from '../state/lanyard';
 
 enum Operation {
@@ -90,7 +90,7 @@ const Doing = (
   return (
     <>
       {doing?.listening_to_spotify ? (
-        <Container ref={ref} to={'/presence'} {...props}>
+        <Container ref={ref} to={'/'} {...props}>
           <h5>
             Listening to Spotify <LiveDot />
           </h5>
@@ -110,7 +110,7 @@ const Doing = (
         </Container>
       ) : null}
       {currentActivity ? (
-        <Container to={'/presence'} {...props}>
+        <Container to={'/'} {...props}>
           <h5>Doing something</h5>
           <ActivityRow>
             {currentActivity.assets ? (
