@@ -112,7 +112,7 @@ const Nav = () => {
           </div>
 
           <Icons>
-            <a href="https://twitter.com/illegaldi">
+            <a href="https://twitter.com/bugscript">
               <TwitterLogo />
             </a>
             <a href="https://github.com/idtc">
